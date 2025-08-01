@@ -1,8 +1,8 @@
 Python for Finance Report
 A Study on Covered Call Writing Strategy
-Authors
-Dang Huy Bui
 
+Authors:
+Dang Huy Bui
 Patrick Guth
 
 Project Description
@@ -27,22 +27,6 @@ Database Connection: Establishes a connection to the WRDS database.
 Data Retrieval: Queries WRDS to fetch historical stock and option data for the defined list of tickers and saves the raw data into separate CSV files.
 
 Data Processing: Filters the option data to align it with specific stock dates, and then merges the stock and option data into a single DataFrame for each ticker.
-
-Data Quality Report: A detailed function is implemented to perform comprehensive data quality checks on the merged data. This includes checking for:
-
-Total number of rows.
-
-Date range.
-
-Missing values.
-
-Date alignment failures.
-
-Invalid stock or strike prices.
-
-Duplicate contracts.
-
-Database Disconnection: Closes the WRDS database connection.
 
 Key Findings
 The analysis in this notebook concludes that, for the period and stocks studied, the implemented covered call strategy underperforms the respective stock. This is attributed to aggressive outliers that significantly draw down returns.
